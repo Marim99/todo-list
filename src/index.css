@@ -1,13 +1,92 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar{
+  height: 200px;
+  background-image:linear-gradient(to bottom right,#60BEEB,#89CFF0,#fff);
+  text-align: center;
+  padding-top: 25px;
+  border-radius: 0 0 20px 20px;
+}
+.navbar h1{
+  color: #fff;
+  font-weight: 500;
+}
+.navbar p{
+margin-top: 18px;
+font-style: italic;
+color: #eee;
+}
+.navbar span{
+  color: #fff;
+  font-weight: 500;
+}
+.container{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.task{
+width: 500px;
+height: 250px;
+display: inline-block;
+background-color: rgb(137, 207, 240,0.5);
+margin: 15px;
+padding: 20px;
+border-radius: 10px;
+position: relative;
+}
+.task h3{
+ font-weight: bold;
+}
+.task p{
+  margin-top: 10px;
+}
+.task li{
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}
+input[type=text]{
+  padding: 12px 20px;
+  margin: 8px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  opacity: 0.55;
+}
+input[type=submit]{
+  background-color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #60BEEB;
+}
+input[type=text]:focus {
+  outline: none;
+  opacity: 1;
+}
+.empty{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+}
+.empty .img{
+  background-image: url('D:\React-apps\todo-list\src\images\Launch.png');
+  width: 600px;
+  background-size: cover;
+ height: 120vh;
+  margin: auto;
 }
